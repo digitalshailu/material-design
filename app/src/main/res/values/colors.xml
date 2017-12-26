@@ -8,4 +8,5 @@
     <color name="overflowMenuBg">#ede2b2</color>
     <color name="grey">#838493</color>
 
+    <color name="contextual_background">#FF4081</color>
 </resources>

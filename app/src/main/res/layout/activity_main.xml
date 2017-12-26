@@ -32,5 +32,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="openActionbarToolbar"/>
+    <Button
+        android:text="ContextualMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openContextualMenu"/>
 
 </LinearLayout>

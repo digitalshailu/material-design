@@ -14,6 +14,10 @@
         <item name="android:colorControlHighlight">#edea0d</item> <!-- Ripple color change on button-->
         <item name="android:colorButtonNormal">#f955f3</item> <!-- color change on button-->
         <item name="android:colorControlActivated">#0cf427</item> <!-- Selection color for Radio, Checkbox-->
+
+        <item name="windowActionModeOverlay">true</item> <!-- Contextual menu is put above toolbar, use this to put it on toolbar.-->
+
+        <item name="actionModeStyle">@style/MyActionModeTheme</item>  <!-- Apply style to contextual menu-->
     </style>
 
     <!-- Theme for toolbar -->
@@ -26,6 +30,23 @@
     <style name="MyToolbarOverlayTheme" parent="ThemeOverlay.AppCompat.Light">
         <item name="android:background">@color/overflowMenuBg</item> <!-- Overflow background-->
         <item name="android:textColorPrimary">@color/grey</item> <!-- Overflow text color-->
-
     </style>
+
+    <!--Theme for Contextual menu-->
+    <!--============================================================================== -->
+    <style name="MyActionModeTheme" parent="@style/Widget.AppCompat.ActionMode">
+        <item name="background">@color/contextual_background</item>
+        <item name="titleTextStyle">@style/ContextualMenuTitleTheme</item>
+        <item name="subtitleTextStyle">@style/ContextualMenuSubTitleTheme</item>
+    </style>
+
+    <style name="ContextualMenuTitleTheme" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ContextualMenuSubTitleTheme" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <!--============================================================================== -->
+
 </resources>
