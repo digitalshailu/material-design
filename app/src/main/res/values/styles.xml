@@ -10,6 +10,10 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:colorControlHighlight">#edea0d</item> <!-- Ripple color change on button-->
+        <item name="android:colorButtonNormal">#f955f3</item> <!-- color change on button-->
+        <item name="android:colorControlActivated">#0cf427</item> <!-- Selection color for Radio, Checkbox-->
     </style>
 
 </resources>
