@@ -19,5 +19,6 @@ public class StandAloneToolbar extends AppCompatActivity {
         toolbar.setTitle("Standard Toolbar");
         toolbar.setSubtitle("sub title");
         toolbar.setNavigationIcon(R.drawable.ic_launcher);
+
     }
 }
