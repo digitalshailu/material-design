@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".StandAloneToolbar"></activity>
+        <activity android:name=".ActionBarToolbar"></activity>
     </application>
 
 </manifest>
