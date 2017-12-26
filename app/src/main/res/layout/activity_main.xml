@@ -44,4 +44,10 @@
         android:layout_height="wrap_content"
         android:onClick="openSnackBar"/>
 
+    <Button
+        android:text="FloatingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openFloatingButton"/>
+
 </LinearLayout>

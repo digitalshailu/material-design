@@ -33,4 +33,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, SnackBarActivity.class);
         startActivity(i);
     }
+
+    public void openFloatingButton(View view) {
+        Intent i = new Intent(this, FloatingButtonActivity.class);
+        startActivity(i);
+    }
 }
