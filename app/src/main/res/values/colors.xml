@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!--Color for toolbar overflow-->
+    <color name="overflowMenuBg">#ede2b2</color>
+    <color name="grey">#838493</color>
+
 </resources>

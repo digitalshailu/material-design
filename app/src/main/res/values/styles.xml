@@ -16,4 +16,16 @@
         <item name="android:colorControlActivated">#0cf427</item> <!-- Selection color for Radio, Checkbox-->
     </style>
 
+    <!-- Theme for toolbar -->
+    <style name="MyToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@android:color/white</item> <!-- Toolbar title-->
+        <item name="android:textColorSecondary">@android:color/white</item> <!-- 3 dots icon, Navigation drawer icon-->
+    </style>
+
+    <!-- Theme for toolbar overlay -->
+    <style name="MyToolbarOverlayTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@color/overflowMenuBg</item> <!-- Overflow background-->
+        <item name="android:textColorPrimary">@color/grey</item> <!-- Overflow text color-->
+
+    </style>
 </resources>
