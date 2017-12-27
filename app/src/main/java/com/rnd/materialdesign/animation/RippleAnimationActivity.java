@@ -16,14 +16,10 @@ public class RippleAnimationActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ripple_animation);
-
-        //getSupportActionBar().setTitle("Ripple Animations");
     }
 
-    public void openRepelEffect(View view) {
 
-    }
-
+//    Dummy callback method for this Ripple effect PoC to work
     public void performRepelEffect(View view) {
     }
 }

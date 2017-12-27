@@ -22,6 +22,7 @@
         <activity android:name=".FloatingButtonActivity"></activity>
         <activity android:name=".animation.MainAnimationActivity"></activity>
         <activity android:name=".animation.RippleAnimationActivity"></activity>
+        <activity android:name=".animation.SharedAnimationActivity"></activity>
 
     </application>
 

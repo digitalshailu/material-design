@@ -18,6 +18,8 @@
         <item name="windowActionModeOverlay">true</item> <!-- Contextual menu is put above toolbar, use this to put it on toolbar.-->
 
         <item name="actionModeStyle">@style/MyActionModeTheme</item>  <!-- Apply style to contextual menu-->
+
+        <item name="android:windowContentTransitions">true</item> <!-- Enable window content transition-->
     </style>
 
     <!-- Theme for toolbar -->
