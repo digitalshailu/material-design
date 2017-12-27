@@ -50,4 +50,30 @@ public class MainAnimationActivity extends AppCompatActivity {
         Intent i = new Intent(this, SharedAnimationActivity.class);
         startActivity(i, activityOptions.toBundle());
     }
+
+    public void explodeTransitionByJava(View view) {
+
+        ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(this);
+
+        //Pass the ActivityOptions.toBundle while starting the activity.
+        Intent i = new Intent(this, TransitionAnimationActivity.class);
+        i.putExtra(AnimationContants.KEY_ANIM_TYPE, AnimationContants.TransitionType.ExplodeJava);
+        i.putExtra(AnimationContants.KEY_TITLE, "Explode by JAVA");
+        startActivity(i, activityOptions.toBundle());
+    }
+
+    public void explodeTransitionByXML(View view) {
+    }
+
+    public void slideTransitionByJava(View view) {
+    }
+
+    public void slideTransitionByXML(View view) {
+    }
+
+    public void fadeTransitionByJava(View view) {
+    }
+
+    public void fadeTransitionByXML(View view) {
+    }
 }
