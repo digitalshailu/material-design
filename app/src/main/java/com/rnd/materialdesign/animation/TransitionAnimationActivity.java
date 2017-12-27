@@ -6,6 +6,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.transition.Explode;
+import android.transition.Transition;
+import android.transition.TransitionInflater;
 import android.view.View;
 import android.view.Window;
 
@@ -44,6 +46,8 @@ public class TransitionAnimationActivity extends AppCompatActivity {
                 getWindow().setEnterTransition(explode);
                 break;
             case ExplodeXML:
+                Transition enterTransition = TransitionInflater.from(this).inflateTransition(R.transition.explode);
+                getWindow().setEnterTransition(enterTransition);
                 break;
             case SlideJava:
                 break;
