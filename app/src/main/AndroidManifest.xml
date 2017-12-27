@@ -20,6 +20,9 @@
         <activity android:name=".ContextualMenu"></activity>
         <activity android:name=".SnackBarActivity"></activity>
         <activity android:name=".FloatingButtonActivity"></activity>
+        <activity android:name=".animation.MainAnimationActivity"></activity>
+        <activity android:name=".animation.RippleAnimationActivity"></activity>
+
     </application>
 
 </manifest>

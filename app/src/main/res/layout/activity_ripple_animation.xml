@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:onClick="performRepelEffect"
+        android:text="Ripple with border"
+        android:textSize="20sp"
+        android:background="?android:attr/selectableItemBackground"/> <!--Set background to get ripple effect. this will take color from colorControlHighlight in styles if declared.-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:onClick="performRepelEffect"
+        android:text="Ripple without border"
+        android:textSize="20sp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:onClick="performRepelEffect"
+        android:text="Custom Ripple with border"
+        android:textSize="20sp"
+        android:background="@drawable/custom_ripple_border"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:onClick="performRepelEffect"
+        android:text="Custom Ripple without border"
+        android:textSize="20sp"
+        android:background="@drawable/custom_ripple_without_border"/>
+
+</LinearLayout>
