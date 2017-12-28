@@ -74,6 +74,13 @@ public class MainAnimationActivity extends AppCompatActivity {
     }
 
     public void slideTransitionByJava(View view) {
+        ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(this);
+
+        //Pass the ActivityOptions.toBundle while starting the activity.
+        Intent i = new Intent(this, TransitionAnimationActivity.class);
+        i.putExtra(AnimationContants.KEY_ANIM_TYPE, AnimationContants.TransitionType.SlideJava);
+        i.putExtra(AnimationContants.KEY_TITLE, "Slide by JAVA");
+        startActivity(i, activityOptions.toBundle());
     }
 
     public void slideTransitionByXML(View view) {

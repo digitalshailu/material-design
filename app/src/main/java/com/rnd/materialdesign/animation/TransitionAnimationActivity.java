@@ -6,10 +6,13 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.transition.Explode;
+import android.transition.Slide;
 import android.transition.Transition;
 import android.transition.TransitionInflater;
+import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
+import android.view.animation.AnticipateInterpolator;
 
 import com.rnd.materialdesign.R;
 
@@ -50,6 +53,13 @@ public class TransitionAnimationActivity extends AppCompatActivity {
                 getWindow().setEnterTransition(enterTransition);
                 break;
             case SlideJava:
+                Slide slide = new Slide();
+                slide.setDuration(1000);
+                slide.setSlideEdge(Gravity.BOTTOM);
+                //In previous commit, Interpolator was set by XML,
+                //Setting interpolator by code.
+                slide.setInterpolator(new AnticipateInterpolator());
+                getWindow().setEnterTransition(slide);
                 break;
             case SlideXML:
                 break;
