@@ -40,10 +40,8 @@ public class MainAnimationActivity extends AppCompatActivity {
         Slide slide = new Slide();
         slide.setDuration(1000);
         slide.setSlideEdge(Gravity.BOTTOM);
-        //Transition while re-entering to this activity, Diff setEnterTransition and setReenterTransition
+        //Transition while re-entering to this activity.Diff setEnterTransition and setReenterTransition
         getWindow().setReenterTransition(slide);
-        //Set false to fix the overlap issue while re entering. (Start animation only after previous activity trasition is over.)
-        getWindow().setAllowReturnTransitionOverlap(false);
         //Transition while exiting from this activity.
         getWindow().setExitTransition(slide);
     }

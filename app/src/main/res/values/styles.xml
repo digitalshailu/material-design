@@ -20,6 +20,9 @@
         <item name="actionModeStyle">@style/MyActionModeTheme</item>  <!-- Apply style to contextual menu-->
 
         <item name="android:windowContentTransitions">true</item> <!-- Enable window content transition-->
+
+        <item name="android:windowAllowEnterTransitionOverlap">false</item> <!-- Don't allow overlap of transition while entering activity-->
+        <item name="android:windowAllowReturnTransitionOverlap">false</item> <!-- Don't allow overlap of transition while re-entering activity-->
     </style>
 
     <!-- Theme for toolbar -->
