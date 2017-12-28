@@ -95,6 +95,13 @@ public class MainAnimationActivity extends AppCompatActivity {
     }
 
     public void fadeTransitionByJava(View view) {
+        ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(this);
+
+        //Pass the ActivityOptions.toBundle while starting the activity.
+        Intent i = new Intent(this, TransitionAnimationActivity.class);
+        i.putExtra(AnimationContants.KEY_ANIM_TYPE, AnimationContants.TransitionType.FadeJava);
+        i.putExtra(AnimationContants.KEY_TITLE, "Fade by JAVA");
+        startActivity(i, activityOptions.toBundle());
     }
 
     public void fadeTransitionByXML(View view) {

@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.transition.Explode;
+import android.transition.Fade;
 import android.transition.Slide;
 import android.transition.Transition;
 import android.transition.TransitionInflater;
@@ -66,6 +67,9 @@ public class TransitionAnimationActivity extends AppCompatActivity {
                 getWindow().setEnterTransition(slideTransition);
                 break;
             case FadeJava:
+                Fade fade = new Fade();
+                fade.setDuration(1000);
+                getWindow().setEnterTransition(fade);
                 break;
             case FadeXML:
                 break;
