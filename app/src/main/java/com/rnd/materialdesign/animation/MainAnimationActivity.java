@@ -5,8 +5,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.transition.Slide;
 import android.util.Pair;
+import android.view.Gravity;
 import android.view.View;
+import android.view.animation.AnticipateInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -28,6 +31,19 @@ public class MainAnimationActivity extends AppCompatActivity {
         mMailImageView = (ImageView) findViewById(R.id.mailImageView);
         mDoneImageView = (ImageView) findViewById(R.id.doneImageView);
         mSharedText = (TextView) findViewById(R.id.sharedText);
+        
+        //Set animation on the receiving activity.
+        setWindowAnimation();
+    }
+
+    private void setWindowAnimation() {
+        Slide slide = new Slide();
+        slide.setDuration(1000);
+        slide.setSlideEdge(Gravity.BOTTOM);
+        //Transition while re-entering to this activity, Diff setEnterTransition and setReenterTransition
+        getWindow().setReenterTransition(slide);
+        //Transition while exiting from this activity.
+        getWindow().setExitTransition(slide);
     }
 
     public void openRepelEffect(View view) {
