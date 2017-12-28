@@ -38,6 +38,9 @@ public class TransitionAnimationActivity extends AppCompatActivity {
         initPage();
 
         initAnimation();
+
+        //Set false to fix the overlap issue while entering. (Start animation only after previous activity trasition is over.)
+        getWindow().setAllowEnterTransitionOverlap(false);
     }
 
     private void initAnimation() {
