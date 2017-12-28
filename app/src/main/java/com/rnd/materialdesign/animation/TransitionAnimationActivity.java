@@ -72,6 +72,8 @@ public class TransitionAnimationActivity extends AppCompatActivity {
                 getWindow().setEnterTransition(fade);
                 break;
             case FadeXML:
+                Transition faseTransition = TransitionInflater.from(this).inflateTransition(R.transition.fade);
+                getWindow().setEnterTransition(faseTransition);
                 break;
         }
 
