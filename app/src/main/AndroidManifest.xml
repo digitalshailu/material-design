@@ -25,6 +25,8 @@
         <activity android:name=".animation.SharedAnimationActivity"></activity>
         <activity android:name=".animation.TransitionAnimationActivity"></activity>
         <activity android:name=".FloatingLabelTextInputLayoutActivity"></activity>
+        <activity android:name=".coordinator.CoordinatorAppbarActivity"></activity>
+
 
     </application>
 

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.rnd.materialdesign.animation.MainAnimationActivity;
+import com.rnd.materialdesign.coordinator.CoordinatorAppbarActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -47,6 +48,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openFloatingLableTextInputLayout(View view) {
         Intent i = new Intent(this, FloatingLabelTextInputLayoutActivity.class);
+        startActivity(i);
+    }
+
+    public void openCoordinatorLayoutAppBarLayout(View view) {
+        Intent i = new Intent(this, CoordinatorAppbarActivity.class);
         startActivity(i);
     }
 }

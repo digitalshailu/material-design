@@ -62,4 +62,10 @@
         android:layout_height="wrap_content"
         android:onClick="openFloatingLableTextInputLayout"/>
 
+    <Button
+        android:text="CoordinatorLayoutAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openCoordinatorLayoutAppBarLayout"/>
+
 </LinearLayout>
