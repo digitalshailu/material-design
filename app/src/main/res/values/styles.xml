@@ -54,4 +54,8 @@
     </style>
     <!--============================================================================== -->
 
+    <!--Theme for TextInputLayout error color -->
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/grey</item>
+    </style>
 </resources>
