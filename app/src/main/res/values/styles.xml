@@ -23,6 +23,8 @@
 
         <item name="android:windowAllowEnterTransitionOverlap">false</item> <!-- Don't allow overlap of transition while entering activity-->
         <item name="android:windowAllowReturnTransitionOverlap">false</item> <!-- Don't allow overlap of transition while re-entering activity-->
+        
+        <item name="textColorError">@color/green</item> <!-- This will be overriden if "app:errorTextAppearance" is applied on TextInputLayout-->
     </style>
 
     <!-- Theme for toolbar -->
@@ -54,7 +56,7 @@
     </style>
     <!--============================================================================== -->
 
-    <!--Theme for TextInputLayout error color -->
+    <!--Theme for TextInputLayout error color, This will override the "textColorError"-->
     <style name="error_appearance" parent="@android:style/TextAppearance">
         <item name="android:textColor">@color/grey</item>
     </style>

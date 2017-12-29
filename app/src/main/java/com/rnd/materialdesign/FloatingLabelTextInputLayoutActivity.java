@@ -42,5 +42,12 @@ public class FloatingLabelTextInputLayoutActivity extends AppCompatActivity{
         }else{
             inputLayoutFullname.setErrorEnabled(false);
         }
+
+        if(editTextEmail.getText().toString().isEmpty()){
+            inputLayoutEmail.setError("Email is manadatory!");
+            isValid = false;
+        }else{
+            inputLayoutEmail.setErrorEnabled(false);
+        }
     }
 }
