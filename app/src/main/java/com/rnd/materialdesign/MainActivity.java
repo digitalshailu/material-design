@@ -44,4 +44,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, MainAnimationActivity.class);
         startActivity(i);
     }
+
+    public void openFloatingLableTextInputLayout(View view) {
+        Intent i = new Intent(this, FloatingLabelTextInputLayoutActivity.class);
+        startActivity(i);
+    }
 }

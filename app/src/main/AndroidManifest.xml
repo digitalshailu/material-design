@@ -24,6 +24,7 @@
         <activity android:name=".animation.RippleAnimationActivity"></activity>
         <activity android:name=".animation.SharedAnimationActivity"></activity>
         <activity android:name=".animation.TransitionAnimationActivity"></activity>
+        <activity android:name=".FloatingLabelTextInputLayoutActivity"></activity>
 
     </application>
 

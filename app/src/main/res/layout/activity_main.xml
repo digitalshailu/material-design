@@ -56,4 +56,10 @@
         android:layout_height="wrap_content"
         android:onClick="openAnimationButton"/>
 
+    <Button
+        android:text="FloatingLableTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openFloatingLableTextInputLayout"/>
+
 </LinearLayout>
